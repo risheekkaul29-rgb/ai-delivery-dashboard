@@ -1,0 +1,22 @@
+# Never commit credentials or pulled source material
+.env
+.env.*
+*.pem
+*.key
+credentials*.json
+token*.json
+service-account*.json
+
+# Raw source pulls — transcripts, emails, exports.
+# These are more sensitive than the dashboard itself. Keep them out of git.
+/sources/
+/drafts/
+*.eml
+*.mbox
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
